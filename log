@@ -1,0 +1,302 @@
+2020-07-07T07:33:09.9549486Z ##[section]Starting: Build
+2020-07-07T07:33:10.1208779Z ##[section]Starting: Initialize job
+2020-07-07T07:33:10.1210207Z Agent name: 'Azure Pipelines 3'
+2020-07-07T07:33:10.1210654Z Agent machine name: 'fv-az151'
+2020-07-07T07:33:10.1210953Z Current agent version: '2.171.1'
+2020-07-07T07:33:10.1253558Z ##[group]Operating System
+2020-07-07T07:33:10.1253844Z Ubuntu
+2020-07-07T07:33:10.1254055Z 18.04.4
+2020-07-07T07:33:10.1254237Z LTS
+2020-07-07T07:33:10.1254451Z ##[endgroup]
+2020-07-07T07:33:10.1254688Z ##[group]Virtual Environment
+2020-07-07T07:33:10.1254969Z Environment: ubuntu-18.04
+2020-07-07T07:33:10.1255216Z Version: 20200625.0
+2020-07-07T07:33:10.1255610Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20200625.0/images/linux/Ubuntu1804-README.md
+2020-07-07T07:33:10.1256016Z ##[endgroup]
+2020-07-07T07:33:10.1257044Z Current image version: '20200625.0'
+2020-07-07T07:33:10.1261711Z Agent running as: 'vsts'
+2020-07-07T07:33:10.1306900Z Prepare build directory.
+2020-07-07T07:33:10.1621194Z Set build variables.
+2020-07-07T07:33:10.1656238Z Download all required tasks.
+2020-07-07T07:33:10.1793471Z Downloading task: Docker (2.170.2)
+2020-07-07T07:33:12.0971639Z Checking job knob settings.
+2020-07-07T07:33:12.0981918Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2020-07-07T07:33:12.0983510Z    Knob: AgentPerflog = /home/vsts/perflog Source: ${VSTS_AGENT_PERFLOG} 
+2020-07-07T07:33:12.0984363Z Finished checking job knob settings.
+2020-07-07T07:33:12.1291238Z Start tracking orphan processes.
+2020-07-07T07:33:12.1488283Z ##[section]Finishing: Initialize job
+2020-07-07T07:33:12.1848897Z ##[section]Starting: Checkout test@master to s
+2020-07-07T07:33:12.2062939Z ==============================================================================
+2020-07-07T07:33:12.2063639Z Task         : Get sources
+2020-07-07T07:33:12.2064252Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2020-07-07T07:33:12.2064612Z Version      : 1.0.0
+2020-07-07T07:33:12.2065086Z Author       : Microsoft
+2020-07-07T07:33:12.2065883Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2020-07-07T07:33:12.2066309Z ==============================================================================
+2020-07-07T07:33:13.1090291Z Syncing repository: test (Git)
+2020-07-07T07:33:13.1093294Z ##[command]git version
+2020-07-07T07:33:13.1096840Z git version 2.27.0
+2020-07-07T07:33:13.1097947Z ##[command]git lfs version
+2020-07-07T07:33:13.1101575Z git-lfs/2.11.0 (GitHub; linux amd64; go 1.13.4)
+2020-07-07T07:33:13.1103021Z ##[command]git init "/home/vsts/work/1/s"
+2020-07-07T07:33:13.1106358Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
+2020-07-07T07:33:13.1107204Z ##[command]git remote add origin https://rdwaykos@dev.azure.com/rdwaykos/test/_git/test
+2020-07-07T07:33:13.1116646Z ##[command]git config gc.auto 0
+2020-07-07T07:33:13.1215104Z ##[command]git config --get-all http.https://rdwaykos@dev.azure.com/rdwaykos/test/_git/test.extraheader
+2020-07-07T07:33:13.1218742Z ##[command]git config --get-all http.proxy
+2020-07-07T07:33:13.1226964Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer ***" fetch --force --tags --prune --progress --no-recurse-submodules origin
+2020-07-07T07:33:13.1230200Z remote: Azure Repos        
+2020-07-07T07:33:13.1230436Z remote: 
+2020-07-07T07:33:13.1230711Z remote: Found 41 objects to send. (1 ms)        
+2020-07-07T07:33:13.1246537Z From https://dev.azure.com/rdwaykos/test/_git/test
+2020-07-07T07:33:13.1248003Z  * [new branch]      master     -> origin/master
+2020-07-07T07:33:13.1941093Z ##[command]git checkout --progress --force 2c76fbfdeff6ec73291ec28d6366134c92412d65
+2020-07-07T07:33:13.1944748Z Note: switching to '2c76fbfdeff6ec73291ec28d6366134c92412d65'.
+2020-07-07T07:33:13.1945588Z 
+2020-07-07T07:33:13.1946124Z You are in 'detached HEAD' state. You can look around, make experimental
+2020-07-07T07:33:13.1946627Z changes and commit them, and you can discard any commits you make in this
+2020-07-07T07:33:13.1947293Z state without impacting any branches by switching back to a branch.
+2020-07-07T07:33:13.1947716Z 
+2020-07-07T07:33:13.1948055Z If you want to create a new branch to retain commits you create, you may
+2020-07-07T07:33:13.1948700Z do so (now or later) by using -c with the switch command. Example:
+2020-07-07T07:33:13.1948953Z 
+2020-07-07T07:33:13.1949393Z   git switch -c <new-branch-name>
+2020-07-07T07:33:13.1949566Z 
+2020-07-07T07:33:13.1949918Z Or undo this operation with:
+2020-07-07T07:33:13.1950099Z 
+2020-07-07T07:33:13.1950451Z   git switch -
+2020-07-07T07:33:13.1950597Z 
+2020-07-07T07:33:13.1951103Z Turn off this advice by setting config variable advice.detachedHead to false
+2020-07-07T07:33:13.1951334Z 
+2020-07-07T07:33:13.1951882Z HEAD is now at 2c76fbf Update azure-pipelines-1.yml for Azure Pipelines
+2020-07-07T07:33:13.2000764Z ##[section]Finishing: Checkout test@master to s
+2020-07-07T07:33:13.2028462Z ##[section]Starting: Login to Docker Hub
+2020-07-07T07:33:13.2037318Z ==============================================================================
+2020-07-07T07:33:13.2037699Z Task         : Docker
+2020-07-07T07:33:13.2038037Z Description  : Build or push Docker images, login or logout, or run a Docker command
+2020-07-07T07:33:13.2038374Z Version      : 2.170.2
+2020-07-07T07:33:13.2038748Z Author       : Microsoft Corporation
+2020-07-07T07:33:13.2039053Z Help         : https://aka.ms/azpipes-docker-tsg
+2020-07-07T07:33:13.2039449Z ==============================================================================
+2020-07-07T07:33:13.6486917Z 67f8e491-1043-4b52-94e9-81718060be6d exists true
+2020-07-07T07:33:13.7096915Z ##[section]Finishing: Login to Docker Hub
+2020-07-07T07:33:13.7128049Z ##[section]Starting: Build and Push
+2020-07-07T07:33:13.7137457Z ==============================================================================
+2020-07-07T07:33:13.7137849Z Task         : Docker
+2020-07-07T07:33:13.7138238Z Description  : Build or push Docker images, login or logout, or run a Docker command
+2020-07-07T07:33:13.7138736Z Version      : 2.170.2
+2020-07-07T07:33:13.7139051Z Author       : Microsoft Corporation
+2020-07-07T07:33:13.7139458Z Help         : https://aka.ms/azpipes-docker-tsg
+2020-07-07T07:33:13.7139828Z ==============================================================================
+2020-07-07T07:33:13.9345470Z [command]/usr/bin/docker build -f /home/vsts/work/1/s/app/Dockerfile --label com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/rdwaykos/ --label com.azure.dev.image.system.teamproject=test --label com.azure.dev.image.build.repository.name=test --label com.azure.dev.image.build.sourceversion=2c76fbfdeff6ec73291ec28d6366134c92412d65 --label com.azure.dev.image.build.repository.uri=https://rdwaykos@dev.azure.com/rdwaykos/test/_git/test --label com.azure.dev.image.build.sourcebranchname=master --label com.azure.dev.image.build.definitionname=test (1) --label com.azure.dev.image.build.buildnumber=20200707.5 --label com.azure.dev.image.build.builduri=vstfs:///Build/Build/13 -t ***/test:v1 /home/vsts/work/1/s/app
+2020-07-07T07:33:14.3779210Z Sending build context to Docker daemon  19.46kB
+2020-07-07T07:33:14.3780130Z 
+2020-07-07T07:33:14.4048751Z Step 1/16 : FROM node:8
+2020-07-07T07:33:17.1908253Z 8: Pulling from library/node
+2020-07-07T07:33:18.1062348Z 146bd6a88618: Pulling fs layer
+2020-07-07T07:33:18.1076007Z 9935d0c62ace: Pulling fs layer
+2020-07-07T07:33:18.1079100Z db0efb86e806: Pulling fs layer
+2020-07-07T07:33:18.1080552Z e705a4c4fd31: Pulling fs layer
+2020-07-07T07:33:18.1081837Z c877b722db6f: Pulling fs layer
+2020-07-07T07:33:18.1083087Z 645c20ec8214: Pulling fs layer
+2020-07-07T07:33:18.1084552Z db8fbd9db2fe: Pulling fs layer
+2020-07-07T07:33:18.1085865Z 1c151cd1b3ea: Pulling fs layer
+2020-07-07T07:33:18.1086919Z fbd993995f40: Pulling fs layer
+2020-07-07T07:33:18.1088322Z e705a4c4fd31: Waiting
+2020-07-07T07:33:18.1089495Z 645c20ec8214: Waiting
+2020-07-07T07:33:18.1090404Z db8fbd9db2fe: Waiting
+2020-07-07T07:33:18.1091287Z 1c151cd1b3ea: Waiting
+2020-07-07T07:33:18.1092712Z fbd993995f40: Waiting
+2020-07-07T07:33:18.1093422Z c877b722db6f: Waiting
+2020-07-07T07:33:19.4388317Z db0efb86e806: Verifying Checksum
+2020-07-07T07:33:19.4436995Z db0efb86e806: Download complete
+2020-07-07T07:33:19.5201834Z 9935d0c62ace: Verifying Checksum
+2020-07-07T07:33:19.5206580Z 9935d0c62ace: Download complete
+2020-07-07T07:33:20.0847268Z 146bd6a88618: Verifying Checksum
+2020-07-07T07:33:20.0860468Z 146bd6a88618: Download complete
+2020-07-07T07:33:21.1589533Z 645c20ec8214: Verifying Checksum
+2020-07-07T07:33:21.1590302Z 645c20ec8214: Download complete
+2020-07-07T07:33:21.2924776Z e705a4c4fd31: Verifying Checksum
+2020-07-07T07:33:21.2925480Z e705a4c4fd31: Download complete
+2020-07-07T07:33:22.3990437Z 146bd6a88618: Pull complete
+2020-07-07T07:33:22.5323083Z 1c151cd1b3ea: Verifying Checksum
+2020-07-07T07:33:22.5323429Z 1c151cd1b3ea: Download complete
+2020-07-07T07:33:22.6516357Z db8fbd9db2fe: Verifying Checksum
+2020-07-07T07:33:22.6553855Z db8fbd9db2fe: Download complete
+2020-07-07T07:33:23.0461057Z 9935d0c62ace: Pull complete
+2020-07-07T07:33:23.2640959Z db0efb86e806: Pull complete
+2020-07-07T07:33:23.3691380Z c877b722db6f: Verifying Checksum
+2020-07-07T07:33:23.3691775Z c877b722db6f: Download complete
+2020-07-07T07:33:23.5950498Z fbd993995f40: Verifying Checksum
+2020-07-07T07:33:23.5951268Z fbd993995f40: Download complete
+2020-07-07T07:33:25.4416095Z e705a4c4fd31: Pull complete
+2020-07-07T07:33:33.7853438Z c877b722db6f: Pull complete
+2020-07-07T07:33:34.2874063Z 645c20ec8214: Pull complete
+2020-07-07T07:33:36.4511882Z db8fbd9db2fe: Pull complete
+2020-07-07T07:33:36.6447157Z 1c151cd1b3ea: Pull complete
+2020-07-07T07:33:38.6445602Z fbd993995f40: Pull complete
+2020-07-07T07:33:39.7443521Z Digest: sha256:a681bf74805b80d03eb21a6c0ef168a976108a287a74167ab593fc953aac34df
+2020-07-07T07:33:39.8594029Z Status: Downloaded newer image for node:8
+2020-07-07T07:33:39.8595615Z  ---> 8eeadf3757f4
+2020-07-07T07:33:39.8595884Z Step 2/16 : WORKDIR /usr/src/app
+2020-07-07T07:33:43.9102161Z  ---> Running in 393188c3e3d0
+2020-07-07T07:33:45.2951880Z Removing intermediate container 393188c3e3d0
+2020-07-07T07:33:45.2953508Z  ---> afdbacc3eb42
+2020-07-07T07:33:45.2953830Z Step 3/16 : COPY package*.json ./
+2020-07-07T07:33:46.7454468Z  ---> 2e480ccc27b1
+2020-07-07T07:33:46.7456049Z Step 4/16 : RUN npm ci --only=production
+2020-07-07T07:33:46.7860838Z  ---> Running in 68f70fd4d5e2
+2020-07-07T07:33:48.8041762Z added 48 packages in 1.029s
+2020-07-07T07:33:50.6219536Z Removing intermediate container 68f70fd4d5e2
+2020-07-07T07:33:50.6220549Z  ---> c56538fbedb3
+2020-07-07T07:33:50.6220789Z Step 5/16 : COPY . .
+2020-07-07T07:33:52.0619969Z  ---> 0fa362cb2d83
+2020-07-07T07:33:52.0620344Z Step 6/16 : EXPOSE 8080
+2020-07-07T07:33:52.1022206Z  ---> Running in aa1a716fe0ad
+2020-07-07T07:33:53.5097999Z Removing intermediate container aa1a716fe0ad
+2020-07-07T07:33:53.5099109Z  ---> bc35818a7e48
+2020-07-07T07:33:53.5099437Z Step 7/16 : CMD [ "npm", "start" ]
+2020-07-07T07:33:53.5490849Z  ---> Running in ec959c332998
+2020-07-07T07:33:54.9820133Z Removing intermediate container ec959c332998
+2020-07-07T07:33:54.9821276Z  ---> 09ae54a7a079
+2020-07-07T07:33:54.9821598Z Step 8/16 : LABEL com.azure.dev.image.build.buildnumber=20200707.5
+2020-07-07T07:33:55.0395280Z  ---> Running in 82d33c865b62
+2020-07-07T07:33:56.4514687Z Removing intermediate container 82d33c865b62
+2020-07-07T07:33:56.4516242Z  ---> aea13b41b98d
+2020-07-07T07:33:56.4516861Z Step 9/16 : LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/13
+2020-07-07T07:33:56.4854643Z  ---> Running in 2b56fc659102
+2020-07-07T07:33:57.9423364Z Removing intermediate container 2b56fc659102
+2020-07-07T07:33:57.9424994Z  ---> bf01c7007b69
+2020-07-07T07:33:57.9425636Z Step 10/16 : LABEL com.azure.dev.image.build.definitionname=test (1)
+2020-07-07T07:33:57.9704723Z  ---> Running in 4a689dd1b802
+2020-07-07T07:33:59.3684249Z Removing intermediate container 4a689dd1b802
+2020-07-07T07:33:59.3685222Z  ---> f9333c944747
+2020-07-07T07:33:59.3685590Z Step 11/16 : LABEL com.azure.dev.image.build.repository.name=test
+2020-07-07T07:33:59.3945308Z  ---> Running in 637ad8b310ff
+2020-07-07T07:34:00.7983834Z Removing intermediate container 637ad8b310ff
+2020-07-07T07:34:00.7985015Z  ---> 1618a3e49983
+2020-07-07T07:34:00.7985460Z Step 12/16 : LABEL com.azure.dev.image.build.repository.uri=https://rdwaykos@dev.azure.com/rdwaykos/test/_git/test
+2020-07-07T07:34:00.8363520Z  ---> Running in 147d4636a813
+2020-07-07T07:34:02.2528578Z Removing intermediate container 147d4636a813
+2020-07-07T07:34:02.2529675Z  ---> 0ea95d9aaa9b
+2020-07-07T07:34:02.2530006Z Step 13/16 : LABEL com.azure.dev.image.build.sourcebranchname=master
+2020-07-07T07:34:02.2924493Z  ---> Running in 22f171b15446
+2020-07-07T07:34:03.7126407Z Removing intermediate container 22f171b15446
+2020-07-07T07:34:03.7127862Z  ---> 3c11bafb60db
+2020-07-07T07:34:03.7128499Z Step 14/16 : LABEL com.azure.dev.image.build.sourceversion=2c76fbfdeff6ec73291ec28d6366134c92412d65
+2020-07-07T07:34:03.7321604Z  ---> Running in 783b191f8c94
+2020-07-07T07:34:05.1553868Z Removing intermediate container 783b191f8c94
+2020-07-07T07:34:05.1555388Z  ---> 7ec642a43a86
+2020-07-07T07:34:05.1556029Z Step 15/16 : LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/rdwaykos/
+2020-07-07T07:34:05.1834674Z  ---> Running in 9ff9293b1e52
+2020-07-07T07:34:06.5752603Z Removing intermediate container 9ff9293b1e52
+2020-07-07T07:34:06.5919748Z  ---> b43d2af6fbbb
+2020-07-07T07:34:06.5920821Z Step 16/16 : LABEL com.azure.dev.image.system.teamproject=test
+2020-07-07T07:34:06.6119338Z  ---> Running in 939ce92aa607
+2020-07-07T07:34:08.0045916Z Removing intermediate container 939ce92aa607
+2020-07-07T07:34:08.0048279Z  ---> 61135205c9d7
+2020-07-07T07:34:08.0049183Z Successfully built 61135205c9d7
+2020-07-07T07:34:08.0098702Z Successfully tagged ***/test:v1
+2020-07-07T07:34:08.0371253Z [command]/usr/bin/docker images
+2020-07-07T07:34:08.0538986Z [command]/usr/bin/docker push ***/test:v1
+2020-07-07T07:34:08.1107271Z REPOSITORY                                           TAG                 IMAGE ID            CREATED             SIZE
+2020-07-07T07:34:08.1110541Z ***/test                                          v1                  61135205c9d7        1 second ago        903MB
+2020-07-07T07:34:08.1114080Z node                                                 12-alpine           06a4a7b5263d        2 weeks ago         89.3MB
+2020-07-07T07:34:08.1131203Z node                                                 12                  f5be1883c8e0        2 weeks ago         918MB
+2020-07-07T07:34:08.1132146Z jekyll/builder                                       latest              12489946feab        3 weeks ago         674MB
+2020-07-07T07:34:08.1133192Z node                                                 10                  e7671d9424c2        3 weeks ago         911MB
+2020-07-07T07:34:08.1134396Z buildpack-deps                                       stretch             1f755ddd86e2        4 weeks ago         835MB
+2020-07-07T07:34:08.1134994Z debian                                               9                   5738956efb6b        4 weeks ago         101MB
+2020-07-07T07:34:08.1135634Z debian                                               8                   a3590c0e9ff9        4 weeks ago         129MB
+2020-07-07T07:34:08.1136484Z node                                                 10-alpine           6bf4087f2679        4 weeks ago         83.8MB
+2020-07-07T07:34:08.1137064Z alpine                                               3.9                 78a2ce922f86        2 months ago        5.55MB
+2020-07-07T07:34:08.1137623Z alpine                                               3.10                be4e4bea2c2e        2 months ago        5.58MB
+2020-07-07T07:34:08.1138206Z alpine                                               3.8                 c8bccc0af957        5 months ago        4.41MB
+2020-07-07T07:34:08.1138769Z node                                                 8                   8eeadf3757f4        6 months ago        901MB
+2020-07-07T07:34:08.1139341Z ubuntu                                               14.04               6e4f1fe62ff1        6 months ago        197MB
+2020-07-07T07:34:08.1140175Z alpine                                               3.7                 6d1ef012b567        16 months ago       4.21MB
+2020-07-07T07:34:08.1141196Z mcr.microsoft.com/azure-pipelines/node8-typescript   latest              9a948d360778        21 months ago       595MB
+2020-07-07T07:34:08.1142004Z The push refers to repository [docker.io/***/test]
+2020-07-07T07:34:09.0081262Z 352a85ced6ed: Preparing
+2020-07-07T07:34:09.0081639Z d02a74f6497e: Preparing
+2020-07-07T07:34:09.0081907Z 7e881fc9e36b: Preparing
+2020-07-07T07:34:09.0082154Z c5b1d04d40c7: Preparing
+2020-07-07T07:34:09.0082448Z 423451ed44f2: Preparing
+2020-07-07T07:34:09.0082695Z b2aaf85d6633: Preparing
+2020-07-07T07:34:09.0082954Z 88601a85ce11: Preparing
+2020-07-07T07:34:09.0083286Z 42f9c2f9c08e: Preparing
+2020-07-07T07:34:09.0083555Z 99e8bd3efaaf: Preparing
+2020-07-07T07:34:09.0083801Z bee1e39d7c3a: Preparing
+2020-07-07T07:34:09.0084067Z 1f59a4b2e206: Preparing
+2020-07-07T07:34:09.0084313Z 0ca7f54856c0: Preparing
+2020-07-07T07:34:09.0084571Z ebb9ae013834: Preparing
+2020-07-07T07:34:09.0084812Z b2aaf85d6633: Waiting
+2020-07-07T07:34:09.0085065Z 88601a85ce11: Waiting
+2020-07-07T07:34:09.0085305Z 42f9c2f9c08e: Waiting
+2020-07-07T07:34:09.0085557Z 99e8bd3efaaf: Waiting
+2020-07-07T07:34:09.0085793Z bee1e39d7c3a: Waiting
+2020-07-07T07:34:09.0086044Z 1f59a4b2e206: Waiting
+2020-07-07T07:34:09.0086282Z 0ca7f54856c0: Waiting
+2020-07-07T07:34:09.0086535Z ebb9ae013834: Waiting
+2020-07-07T07:34:11.0310501Z 423451ed44f2: Layer already exists
+2020-07-07T07:34:12.1210393Z b2aaf85d6633: Layer already exists
+2020-07-07T07:34:15.2656266Z c5b1d04d40c7: Pushed
+2020-07-07T07:34:15.2707652Z 7e881fc9e36b: Pushed
+2020-07-07T07:34:15.2987481Z 352a85ced6ed: Pushed
+2020-07-07T07:34:15.8797242Z 88601a85ce11: Mounted from library/node
+2020-07-07T07:34:16.3398973Z 42f9c2f9c08e: Layer already exists
+2020-07-07T07:34:16.4653411Z bee1e39d7c3a: Layer already exists
+2020-07-07T07:34:16.5327579Z 99e8bd3efaaf: Layer already exists
+2020-07-07T07:34:16.9564926Z d02a74f6497e: Pushed
+2020-07-07T07:34:20.5652644Z 1f59a4b2e206: Mounted from library/node
+2020-07-07T07:34:20.5720198Z 0ca7f54856c0: Mounted from library/node
+2020-07-07T07:34:21.4541525Z ebb9ae013834: Mounted from library/node
+2020-07-07T07:34:28.9562926Z v1: digest: sha256:2d112e41649c811e8829e54dddafe4cc79af6e6623fa80980c274470027791c2 size: 3049
+2020-07-07T07:34:28.9694509Z [command]/usr/bin/docker history --format createdAt:{{.CreatedAt}}; layerSize:{{.Size}}; createdBy:{{.CreatedBy}}; layerId:{{.ID}} --no-trunc ***/test:v1
+2020-07-07T07:34:29.0034265Z createdAt:2020-07-07T07:34:07Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=test; layerId:sha256:61135205c9d748a8210a1f73d7c1e1ec04766df29e9f238bbbfff144ca01e8ff
+2020-07-07T07:34:29.0035985Z createdAt:2020-07-07T07:34:06Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/rdwaykos/; layerId:sha256:b43d2af6fbbb8149fb37f0847b5d8a357178efcc94dec86e1f684fbb3cd9f4dd
+2020-07-07T07:34:29.0037665Z createdAt:2020-07-07T07:34:05Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=2c76fbfdeff6ec73291ec28d6366134c92412d65; layerId:sha256:7ec642a43a8604ca9d9647b6b85174a0295aa733e429aa6842030631788b2d0e
+2020-07-07T07:34:29.0039204Z createdAt:2020-07-07T07:34:03Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=master; layerId:sha256:3c11bafb60db15df3ce3c4294f7b1fcb9ad6203164b252b5a470948f638049c6
+2020-07-07T07:34:29.0040790Z createdAt:2020-07-07T07:34:02Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://rdwaykos@dev.azure.com/rdwaykos/test/_git/test; layerId:sha256:0ea95d9aaa9b3ff7a37087de090a81cae7ca6a67dc56c2fdc321056d9350f3cc
+2020-07-07T07:34:29.0042321Z createdAt:2020-07-07T07:34:00Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=test; layerId:sha256:1618a3e49983434e376b324cba8a137338cbc970c709190921f9ee94547961ef
+2020-07-07T07:34:29.0044069Z createdAt:2020-07-07T07:33:59Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=test (1); layerId:sha256:f9333c944747e4373efc5618e28c3e249d1ea91a675075e5fabd98900003123b
+2020-07-07T07:34:29.0045566Z createdAt:2020-07-07T07:33:57Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/13; layerId:sha256:bf01c7007b69478d8dc83766750f5a8659b2fb15c0f102987f1790987964693c
+2020-07-07T07:34:29.0047038Z createdAt:2020-07-07T07:33:56Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=20200707.5; layerId:sha256:aea13b41b98d69767fb17d1013f256ac5b605729efca2f9c8ecec4e7c7632531
+2020-07-07T07:34:29.0048369Z createdAt:2020-07-07T07:33:54Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["npm" "start"]; layerId:sha256:09ae54a7a079d3427bf4b23324d51a424e67abd1e74e8b31f3f34e427f1d6d3b
+2020-07-07T07:34:29.0049583Z createdAt:2020-07-07T07:33:53Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  EXPOSE 8080; layerId:sha256:bc35818a7e481d4bb5b72699aee1c54a8f17a3ec5e55c2a38a2067359fc972cb
+2020-07-07T07:34:29.0051944Z createdAt:2020-07-07T07:33:51Z; layerSize:412B; createdBy:/bin/sh -c #(nop) COPY dir:576f79378d3b17256b6ea9d767cc8cd61e5ec320ea67eb34bcaad460d731bd3f in . ; layerId:sha256:0fa362cb2d830a84289d0f8b7a7a8819200c80627dee9889b0d3532d7515a112
+2020-07-07T07:34:29.0053518Z createdAt:2020-07-07T07:33:50Z; layerSize:2.19MB; createdBy:/bin/sh -c npm ci --only=production; layerId:sha256:c56538fbedb3f70e43a0eb0ce0373a79869d824c038a383d1cb0c85a84888d6c
+2020-07-07T07:34:29.0054972Z createdAt:2020-07-07T07:33:46Z; layerSize:13.6kB; createdBy:/bin/sh -c #(nop) COPY multi:fbb2e7a9be025a7acafbb71da6884e1098b96d42b3a0a7581ccf690707f66b6e in ./ ; layerId:sha256:2e480ccc27b151c743d2a6f1ad98e5886425c1ac742f383f8b05fda5bc9d2cab
+2020-07-07T07:34:29.0056330Z createdAt:2020-07-07T07:33:45Z; layerSize:0B; createdBy:/bin/sh -c #(nop) WORKDIR /usr/src/app; layerId:sha256:afdbacc3eb42fdb36ae1ed48b2dfc3421801e475dc5ef68abec2685411a6375d
+2020-07-07T07:34:29.0057552Z createdAt:2019-12-28T23:33:08Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["node"]; layerId:sha256:8eeadf3757f41ffbde6fbb4bbbe14f9f5b9ce33cc1aa88bb5c0b4d6e9467509d
+2020-07-07T07:34:29.0058654Z createdAt:2019-12-28T23:33:08Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENTRYPOINT ["docker-entrypoint.sh"]; layerId:<missing>
+2020-07-07T07:34:29.0059851Z createdAt:2019-12-28T23:33:08Z; layerSize:116B; createdBy:/bin/sh -c #(nop) COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ ; layerId:<missing>
+2020-07-07T07:34:29.0065461Z createdAt:2019-12-28T23:33:08Z; layerSize:5.48MB; createdBy:/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz; layerId:<missing>
+2020-07-07T07:34:29.0070204Z createdAt:2019-12-28T23:33:04Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV YARN_VERSION=1.21.1; layerId:<missing>
+2020-07-07T07:34:29.0079432Z createdAt:2019-12-28T23:33:03Z; layerSize:60.3MB; createdBy:/bin/sh -c ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs; layerId:<missing>
+2020-07-07T07:34:29.0086363Z createdAt:2019-12-28T23:32:57Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV NODE_VERSION=8.17.0; layerId:<missing>
+2020-07-07T07:34:29.0087553Z createdAt:2019-12-28T23:32:56Z; layerSize:333kB; createdBy:/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node; layerId:<missing>
+2020-07-07T07:34:29.0090780Z createdAt:2019-12-28T05:00:01Z; layerSize:562MB; createdBy:/bin/sh -c set -ex;  apt-get update;  apt-get install -y --no-install-recommends   autoconf   automake   bzip2   dpkg-dev   file   g++   gcc   imagemagick   libbz2-dev   libc6-dev   libcurl4-openssl-dev   libdb-dev   libevent-dev   libffi-dev   libgdbm-dev   libglib2.0-dev   libgmp-dev   libjpeg-dev   libkrb5-dev   liblzma-dev   libmagickcore-dev   libmagickwand-dev   libmaxminddb-dev   libncurses5-dev   libncursesw5-dev   libpng-dev   libpq-dev   libreadline-dev   libsqlite3-dev   libssl-dev   libtool   libwebp-dev   libxml2-dev   libxslt-dev   libyaml-dev   make   patch   unzip   xz-utils   zlib1g-dev     $(    if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then     echo 'default-libmysqlclient-dev';    else     echo 'libmysqlclient-dev';    fi   )  ;  rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2020-07-07T07:34:29.0093452Z createdAt:2019-12-28T04:59:04Z; layerSize:142MB; createdBy:/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   bzr   git   mercurial   openssh-client   subversion     procps  && rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2020-07-07T07:34:29.0095024Z createdAt:2019-12-28T04:58:38Z; layerSize:7.81MB; createdBy:/bin/sh -c set -ex;  if ! command -v gpg > /dev/null; then   apt-get update;   apt-get install -y --no-install-recommends    gnupg    dirmngr   ;   rm -rf /var/lib/apt/lists/*;  fi; layerId:<missing>
+2020-07-07T07:34:29.0096495Z createdAt:2019-12-28T04:58:32Z; layerSize:23.3MB; createdBy:/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   ca-certificates   curl   netbase   wget  && rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2020-07-07T07:34:29.0098016Z createdAt:2019-12-28T04:23:34Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["bash"]; layerId:<missing>
+2020-07-07T07:34:29.0099139Z createdAt:2019-12-28T04:23:33Z; layerSize:101MB; createdBy:/bin/sh -c #(nop) ADD file:8f7dc710e276f54a3a73d34b6b8fa261950a781d68ceb7401fa18dabc601c5a5 in / ; layerId:<missing>
+2020-07-07T07:34:29.0146299Z [command]/usr/bin/docker inspect 61135205c9d748a8210a1f73d7c1e1ec04766df29e9f238bbbfff144ca01e8ff -f {{.RootFS.Layers}}
+2020-07-07T07:34:29.0451555Z [sha256:ebb9ae013834b54e76c8d7dfde0ca9018f6bb3495740356a8f1dc655a8552130 sha256:0ca7f54856c0baa7f6beecab94a76531965d5d9e079f2fe1761c5173f2f0d9f6 sha256:1f59a4b2e20603f508265d81a77daeafcb7686ed15a1bc07ba5af4d0caeb7993 sha256:bee1e39d7c3ad8f2dac018953a77aeb84d2f8f656e65e046725c32be1926324a sha256:99e8bd3efaaf5af1813cc039cbb9898bb2c4e32aeb8b25faa3c6da9db5762db5 sha256:42f9c2f9c08ecbf1f6b86d712bc083ebfeceba87d3ccc4b7b324732e1ebe4059 sha256:88601a85ce1172c4694087be29afdfb5ddccacc68bfe3866db52c5c3b0802ccb sha256:b2aaf85d6633012767246fe2108648156a0006fa073d2385144a3a8e3a0afaf0 sha256:423451ed44f2ccd0b855da45c76e43fcd341c0716e12c59a05d0dcf0e6d8d1cd sha256:c5b1d04d40c74c085f7ce8f5c1344bf2d55040f2314e63391adbd51cf154f396 sha256:7e881fc9e36b865705e1c94eb2c37ed27acb34972d5f3121ff624daa367586bb sha256:d02a74f6497e5559a9f5235c1ad298050ab9b7c6728d649aa13e68a47ded0a13 sha256:352a85ced6ed09775b1b9c3050c152d34bf2526e651a54e79746e46af9124de9]
+2020-07-07T07:34:29.1244493Z ##[section]Finishing: Build and Push
+2020-07-07T07:34:29.1277163Z ##[section]Starting: Checkout test@master to s
+2020-07-07T07:34:29.1285084Z ==============================================================================
+2020-07-07T07:34:29.1285481Z Task         : Get sources
+2020-07-07T07:34:29.1285895Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2020-07-07T07:34:29.1286285Z Version      : 1.0.0
+2020-07-07T07:34:29.1286567Z Author       : Microsoft
+2020-07-07T07:34:29.1286964Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2020-07-07T07:34:29.1287434Z ==============================================================================
+2020-07-07T07:34:29.5004191Z Cleaning any cached credential from repository: test (Git)
+2020-07-07T07:34:29.5050973Z ##[section]Finishing: Checkout test@master to s
+2020-07-07T07:34:29.5124355Z ##[section]Starting: Finalize Job
+2020-07-07T07:34:29.5158494Z Cleaning up task key
+2020-07-07T07:34:29.5160030Z Start cleaning up orphan processes.
+2020-07-07T07:34:29.5499803Z ##[section]Finishing: Finalize Job
+2020-07-07T07:34:29.5543346Z ##[section]Finishing: Build
