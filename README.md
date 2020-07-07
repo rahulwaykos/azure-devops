@@ -1,5 +1,7 @@
 # Push Docker Image to Docker Registry using Azure Pipeline
 
+![Azure_devops](/azure_devops.png)
+
 ## Azure Pipeline
 Azure Pipelines combines the Continuous Integration and Continuous Delivery to constantly and constistently test and build your code and deploy it to any target. With the help of this we are going to push docker image to docker public registry. For this to work we need :
 - Docker Hub Account
